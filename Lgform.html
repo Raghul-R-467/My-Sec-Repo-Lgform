@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Lgform.css">
+</head>
+<body>
+
+    <!-- ......................... Login form ......................... -->
+    <section class="container1" id="container1" >
+        <div >
+            <form class="loginform">
+                <h1 class="tit">Login</h1><br>
+                <input class="name-display" type="text" placeholder="Name" required>
+                <br>
+                <input class="password-display" type="password" placeholder="Password" required>
+                <br>
+                <br>
+                <a class="forget" href="">Forget Password?</a>
+                <br>
+                <button id="submit" onclick="loggedin()">Submit</button>
+            </form>
+            <div class="no-acc">Don't have an Account- <button onclick="gotosignup()">SignUp here</button></div>
+        </div>
+    </section>
+
+        <!-- ......................... SignUp form ......................... -->
+    <section class="container" id="container2" >
+        <div>
+            <form class="signupform">
+                <h1 class="tit">SignUp</h1>
+                <br>
+                <input class="name-display" type="text" placeholder="Firstname" required>
+                <br>
+                <input class="name-display" type="text" placeholder="Lastname" required>
+                <br>
+                <input class="mail-display" type="email" placeholder="Your Email" required>
+                <br>
+                <input class="password-display" type="password" placeholder="Password" required>
+                <br>
+                <input class="password-display" type="password" placeholder="Confirm Password" required>
+                <br>
+                <div class="checkterm">
+                    <input type="checkbox" class="checkbox">
+                    <p class="terms">I accept the terms and conditions</p>
+                </div>
+                <br>
+                <button id="submit" onclick="signedup()">Submit</button>
+            </form>
+            <div class="have-acc">Already have an Account- <button onclick="gotologin()">Login here</button></div>
+        </div>
+    </section>
+
+    <script src="Lgform.js"></script>
+</body>
+</html>
